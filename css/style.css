@@ -2,12 +2,106 @@
     --light: rgb(255, 255, 255);
     --dark: rgb(0, 23, 31);
     --primary-dark: rgb(0, 50, 86);
-    --primary: rgb(0, 126, 167);
+    --primary: rgb(204, 65, 65);
     --primary-light: rgb(0, 168, 232);
 
     --grey-light: rgb(247, 247, 247);
     --grey-dark: #c2c2c2;
 
     --font-h: 'Oswald', sans-serif;
-    --font-p: 'Droid Serif', serif;
+    --font-p: 'Roboto', serif;
+}
+body{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: var(--font-h);
+    text-transform: uppercase;
+}
+
+h1{
+    font-size: 4rem;
+    font-style: italic;
+}
+
+h5{
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    padding-bottom: 1.5rem;
+}
+
+p{
+    font-family: var(--font-p);
+    line-height: 1.5;
+    font-weight: lighter;
+    font-size: .8rem;
+}
+
+.lead{
+    font-family: var(--font-p);
+    font-weight: 400;
+}
+
+.light{
+    color: var(--light);
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.header{
+    background: linear-gradient(rgba(49, 49, 49, 0.8), rgba(49, 49, 49, 0.8)),
+    url('../img/victor-freitas-569958-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.about{
+    background: var(--primary);
+    border: 1px solid red;
+    padding: 6rem 0;
+}
+
+.about__container{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.about__content{
+    width: 80%;
+    padding: 0 4rem;
+    justify-content: start;
+    height: 80%;
+}
+
+.about__signature{
+    height: 10%;
+    padding: 1rem;
+}
+
+.about__signature img{
+    height: 50%;
+    width: 40%;
+    object-fit: cover;
 }
