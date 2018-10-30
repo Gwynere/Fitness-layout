@@ -1,0 +1,13 @@
+:root{
+    --light: rgb(255, 255, 255);
+    --dark: rgb(0, 23, 31);
+    --primary-dark: rgb(0, 50, 86);
+    --primary: rgb(0, 126, 167);
+    --primary-light: rgb(0, 168, 232);
+
+    --grey-light: rgb(247, 247, 247);
+    --grey-dark: #c2c2c2;
+
+    --font-h: 'Oswald', sans-serif;
+    --font-p: 'Droid Serif', serif;
+}
