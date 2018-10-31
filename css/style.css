@@ -6,7 +6,7 @@
     --primary-light: rgb(0, 168, 232);
 
     --grey-light: rgb(247, 247, 247);
-    --grey-dark: #c2c2c2;
+    --grey-dark: rgb(138, 138, 138);
 
     --font-h: 'Oswald', sans-serif;
     --font-p: 'Roboto', serif;
@@ -21,6 +21,8 @@ body{
     box-sizing: border-box;
 }
 
+/* COMPONENTS */
+
 h1, h2, h3, h4, h5{
     font-family: var(--font-h);
     text-transform: uppercase;
@@ -31,10 +33,22 @@ h1{
     font-style: italic;
 }
 
+h2{
+    font-size: 3rem;
+    font-style: italic;
+    line-height: 1;
+}
+
 h5{
     font-size: 1rem;
     letter-spacing: .2rem;
     padding-bottom: 1.5rem;
+}
+
+h6{
+    font-size: 1rem;
+    font-family: var(--font-p);
+    padding: 1rem 0;
 }
 
 p{
@@ -42,6 +56,7 @@ p{
     line-height: 1.5;
     font-weight: lighter;
     font-size: .8rem;
+    padding: 1rem 0;
 }
 
 .lead{
@@ -53,10 +68,38 @@ p{
     color: var(--light);
 }
 
+.grey{
+    color: var(--grey-dark);
+}
+
 .container{
     width: 60%;
     margin: 0 auto;
 }
+
+/* BUTTONS */
+.btn-primary{
+    outline: none;
+    text-transform: uppercase;
+    font-family: var(--font-p);
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: none;
+    border: .1rem solid var(--primary);
+    color: var(--primary);
+    font-size: .8rem;
+    padding: .9rem 2rem;
+    margin: 1rem 0;
+    transition: all .2s;
+}
+
+.btn-primary:hover{
+    color: var(--light);
+    background: var(--primary);
+    cursor: pointer;
+}
+
+/* HEADER */
 
 .header{
     background: linear-gradient(rgba(49, 49, 49, 0.8), rgba(49, 49, 49, 0.8)),
@@ -69,6 +112,9 @@ p{
     padding: 0;
 }
 
+/* SECTIONS */
+
+/* ABOUT SECTION */
 .about{
     background: var(--primary);
     border: 1px solid red;
@@ -103,5 +149,25 @@ p{
 .about__signature img{
     height: 50%;
     width: 40%;
+    object-fit: cover;
+}
+
+/* INDIVIDUAL SECTION */
+.individual{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.individual__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    justify-self: center;
+}
+
+.individual__image img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
