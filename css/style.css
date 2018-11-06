@@ -2,10 +2,10 @@
     --light: rgb(255, 255, 255);
     --dark: rgb(19, 19, 19);
     --primary-dark: rgb(0, 50, 86);
-    --primary: rgb(204, 65, 65);
+    --primary: rgb(223, 77, 77);
     --primary-light: rgb(0, 168, 232);
 
-    --grey-light: rgb(247, 247, 247);
+    --grey-light: rgb(238, 238, 238);
     --grey-dark: rgb(138, 138, 138);
 
     --font-h: 'Oswald', sans-serif;
@@ -34,9 +34,15 @@ h1{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-style: italic;
     line-height: 1;
+}
+
+h4{
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: var(--font-p);
 }
 
 h5{
@@ -101,6 +107,14 @@ p{
 .btn-primary:hover{
     color: var(--light);
     background: var(--primary);
+    cursor: pointer;
+}
+
+.btn-directions{
+    background: none;
+    color: var(--primary);
+    border: none;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -181,4 +195,50 @@ p{
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* PANELS SECTION */
+
+.schedule{
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.schedule__list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: var(--font-p);
+    color: var(--grey-dark);
+    padding: 3rem 0;
+}
+
+.schedule__list li{
+    padding: 1rem 5rem;
+    background: var(--grey-light);
+    cursor: pointer;
+}
+
+.panel{
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.active{
+    display: block;
+}
+
+.panel__content{
+    text-align: left;
+}
+
+.panel__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-light);
+    padding: 2rem;
 }
