@@ -122,7 +122,6 @@ p{
 /* ABOUT SECTION */
 .about{
     background: var(--primary);
-    border: 1px solid red;
     padding: 6rem 0;
 }
 
