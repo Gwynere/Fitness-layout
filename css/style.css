@@ -197,6 +197,7 @@ i{
     align-items: flex-start;
     align-self: center;
     justify-self: center;
+    padding: 4rem 0;
 }
 
 .group__content{
@@ -228,13 +229,16 @@ i{
     text-transform: uppercase;
     font-family: var(--font-p);
     color: var(--grey-dark);
+    width: 50%;
+    margin: 0 auto;
     padding: 3rem 0;
 }
 
 .schedule__list li{
-    padding: 1rem 7rem;
+    width: 100%;
     background: var(--grey-light);
     cursor: pointer;
+    padding: 1rem 7rem;
 }
 
 .panel{
@@ -247,6 +251,11 @@ i{
     display: block;
 }
 
+.active-nav{
+    background: var(--primary) !important;
+    color: var(--light);
+}
+
 .panel__content{
     text-align: left;
 }
@@ -256,7 +265,7 @@ i{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--grey-light);
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 /* TESTIMONIALS SECTION */
@@ -363,4 +372,40 @@ i{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+@media only screen and (max-width: 1400px){
+    .about__container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .about__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .group__content{
+        grid-row: 2;
+    }
+
+    .schedule__list{
+        flex-wrap: wrap;
+    }
+
+    .insights__content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__top{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 820px){
+    .panel__flex{
+        flex-direction: column;
+    }
 }
